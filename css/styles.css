@@ -1,0 +1,264 @@
+@charset "UTF-8";
+
+/*! НАЧАЛО ОБНУЛЕНИЯ !*/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+ :active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+
+/*! КОНЕЦ ОБНУЛЕНИЯ !*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@300;400;700&family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+:root {
+    --main-color: #b297c4;
+}
+
+body {
+    background: url(/img/bg.png) center;
+}
+
+.header {}
+
+.nav {
+    margin-top: 70px;
+    width: 100%;
+    max-height: 50px;
+    background-color: #383838;
+    justify-content: space-between;
+}
+
+.nav__wrapper {
+    max-width: 1170px;
+    max-height: 50px;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 200px;
+    height: 70px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    position: relative;
+    bottom: 8px;
+}
+
+.nav__text {
+    align-self: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 44px;
+    color: white;
+    justify-self: center;
+    text-decoration: none;
+}
+
+.nav__list {
+    margin: 0;
+    display: flex;
+}
+
+.nav__item:not(:last-child) {
+    padding: 0px 20px;
+    border-left: 1px solid rgb(43, 42, 42);
+    background-color: hsl(0, 0%, 22%);
+    font-family: 'Fjalla One', sans-serif;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+}
+
+.nav__item:last-child {
+    height: 50px;
+    padding: 0px 20px;
+    border-left: 1px solid rgb(43, 42, 42);
+    border-right: 1px solid rgb(43, 42, 42);
+    background-color: hsl(0, 0%, 22%);
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.nav__item a {
+    align-self: center;
+}
+
+.nav__item:hover:not(:last-child) {
+    color: var(--main-color);
+    background-color: hsl(0, 0%, 11%);
+    margin-left: 1px;
+    border: none;
+}
+
+.nav__item:last-child:hover {
+    border-left: 1px solid rgb(43, 42, 42);
+    border-right: 1px solid rgb(43, 42, 42);
+    color: var(--main-color);
+    background-color: hsl(0, 0%, 11%);
+    margin-left: 1px;
+    margin-right: 1px;
+    border: none;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.banner__img {
+    max-height: 448px;
+    border: 20px solid white;
+    border-radius: 5px 5px 0 0;
+    margin-top: 60px;
+    border-bottom: none;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.banner__wrapper {
+    /* background: url(/img/banner.png); */
+    display: flex;
+    width: 1170px;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 21px;
+}
+
+.banner__text {
+    display: flex;
+    justify-content: center;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 64px;
+    color: #fff;
+    opacity: 0.6;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 0 auto;
+}
+
+.banner p {
+    color: rgb(255, 255, 255);
+    opacity: 0.6;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+.banner__button {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    background-color: Transparent;
+    cursor: pointer;
+    border: 3px solid rgb(255, 255, 255);
+    opacity: 0.6;
+    width: 120px;
+    height: 40px;
+}
+
+.main {
+    z-index: 1000;
+}
+
+.footer {}
