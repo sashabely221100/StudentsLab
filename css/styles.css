@@ -566,6 +566,7 @@
         font-style: normal;
         letter-spacing: 0.26px;
         line-height: normal;
+        cursor: default;
     }
     
     .post__text p {
@@ -583,6 +584,7 @@
         font-style: normal;
         letter-spacing: 0.52px;
         line-height: normal;
+        cursor: default;
     }
     
     .footer {
