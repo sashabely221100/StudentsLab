@@ -452,6 +452,11 @@ button i {
     margin-bottom: 19px;
 }
 
+.input__wrapper {
+    display: flex;
+    align-items: center;
+}
+
 .search-form__input {
     height: 32px;
     border-radius: 5px;
@@ -459,10 +464,8 @@ button i {
     width: 100%;
 }
 
-input[type=text] {
-    padding-left: 24px;
-    height: 24px;
-    font-size: 15px;
+.fa__search {
+    margin-right: 300px;
 }
 
 .aside__menu {
@@ -654,7 +657,7 @@ aside>div:not(:last-child) {
     width: 17px;
     height: 17px;
     color: var(--main-color);
-    position: relative;
+    left: 100px;
 }
 
 .footer__credits p {
