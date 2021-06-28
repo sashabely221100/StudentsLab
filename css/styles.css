@@ -801,9 +801,9 @@ aside>div:not(:last-child) {
     .aside {
         display: flex;
         flex-direction: row;
-        width: 1000px;
+        width: 950px;
         margin: 30px auto;
-        justify-content: space-around;
+        justify-content: space-evenly;
         margin-bottom: 30px;
     }
     .content__wrapper {
