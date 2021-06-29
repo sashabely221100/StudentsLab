@@ -184,7 +184,11 @@ body {
 }
 
 .nav__item a {
+    display: flex;
     align-self: center;
+    height: 100%;
+    align-items: center;
+    color: #fff;
 }
 
 .nav__item:hover:not(:last-child) {
@@ -448,6 +452,14 @@ input::-webkit-search-results-decoration {
     width: 270px;
 }
 
+.form__wrapper {
+    height: 100%;
+    padding-top: 24px;
+    width: 230px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 .aside__wrapper {
     height: 100%;
     padding-top: 24px;
@@ -492,19 +504,32 @@ button i {
     align-items: center;
 }
 
+
+/* .input__icon {
+    line-height: 26px;
+    text-align: center;
+    margin-right: -26px;
+    position: relative;
+    z-index: 1;
+    float: left;
+} */
+
 .search-form__input {
     height: 32px;
     border-radius: 5px;
     background: #f0f0f0;
     width: 100%;
+    padding-left: 15px;
 }
 
-.fa__search {
+
+/* .fa__search {
     margin-right: 300px;
-}
+} */
 
 .aside__menu {
     width: 270px;
+    margin-top: 27px;
     background-color: white;
     box-shadow: 0 1px 4px rgba(82, 84, 77, 0.16);
     border-radius: 5px;
@@ -709,7 +734,18 @@ aside>div:not(:last-child) {
     width: 17px;
     height: 17px;
     color: var(--main-color);
-    left: 100px;
+}
+
+.input__button {
+    color: var(--main-color);
+    float: right;
+    align-items: center;
+    text-decoration: none;
+    z-index: 5;
+    right: 20px;
+    top: 3px;
+    position: relative;
+    transform: scale(1.4);
 }
 
 .footer__credits p {
@@ -816,7 +852,7 @@ aside>div:not(:last-child) {
     }
     .column1 {
         order: 1;
-        margin-top: 400px;
+        margin-top: 190px;
     }
     .column2 {
         order: 2;
@@ -841,15 +877,25 @@ aside>div:not(:last-child) {
     .post__wrapper {
         margin: 0 10px;
     }
-    .aside__wrapper {
+    .post__text p {
+        font-size: 11px;
+    }
+    .aside__list-item {
+        font-size: 11px;
+    }
+    .form__wrapper {
         height: auto;
         width: 230px;
         margin: 0 auto;
         overflow: hidden;
     }
-    .aside__icon-menu {
-        padding-bottom: 5px;
+    .aside__wrapper {
+        height: 60%;
+        width: 230px;
+        margin: 0 auto;
+        overflow: hidden;
     }
+    .aside__icon-menu {}
     /* .aside__icon-menu h4 {
         margin-top: 8px;
     } */
@@ -859,6 +905,7 @@ aside>div:not(:last-child) {
     .aside__menu {
         height: 50%;
         overflow-y: scroll;
+        margin-top: 0;
     }
     .aside__menu h4 {
         /* margin-top: 80px; */
