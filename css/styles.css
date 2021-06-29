@@ -147,7 +147,7 @@ body {
 .nav__text {
     align-self: center;
     font-family: 'Fjalla One', sans-serif;
-    font-size: 44px;
+    font-size: 2em;
     color: white;
     justify-self: center;
     text-decoration: none;
@@ -377,6 +377,7 @@ input::-webkit-search-results-decoration {
 .content__wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .picture-box__row1 {
@@ -842,21 +843,13 @@ aside>div:not(:last-child) {
         order: -1;
         width: 0;
     }
-    .aside {
-        display: flex;
-        flex-direction: row;
-        width: 950px;
-        margin: 30px auto;
-        justify-content: center;
-        gap: 20px;
-    }
     .content__wrapper {
         justify-content: space-evenly;
         padding: 30px;
     }
     .column1 {
         order: 1;
-        margin-top: 190px;
+        margin-top: 400px;
     }
     .column2 {
         order: 2;
@@ -870,7 +863,7 @@ aside>div:not(:last-child) {
         margin-right: 20px;
     }
     .post p {
-        margin: 20px 0 20px 0;
+        margin: 20px 0;
     }
     .post__wrapper h3 {
         font-size: 15px;
@@ -892,6 +885,17 @@ aside>div:not(:last-child) {
         width: 230px;
         margin: 0 auto;
         overflow: hidden;
+    }
+    .aside {
+        display: flex;
+        flex-direction: row;
+        width: 950px;
+        margin: 30px auto;
+        justify-content: center;
+        gap: 20px;
+    }
+    .aside h4 {
+        text-align: center;
     }
     .aside__wrapper {
         height: 60%;
@@ -926,37 +930,58 @@ aside>div:not(:last-child) {
     }
 }
 
-@media screen and(max-width:920px) {
-    /*2 колонки*/
+@media (max-width:1010px) {
+    .column4 {
+        position: relative;
+        right: 30px;
+        order: -1;
+        width: 0;
+    }
 }
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:878px) {
+    /*2 колонки*/
     /*футер ломается*/
     .aside {
         display: flex;
         flex-direction: row;
         width: 950px;
         margin: 30px auto;
-        justify-content: space-evenly;
+        /* justify-content: space-evenly; */
     }
     .content__wrapper {
-        justify-content: space-evenly;
+        justify-content: center;
         padding: 30px;
+        gap: 30px;
     }
     .column1 {
         order: 1;
-        margin-top: 190px;
-    }
-    .column2 {
-        order: 2;
         margin-top: 400px;
     }
     .column3 {
         order: 3;
-        margin-top: 400px;
+        margin-top: 20px;
     }
-    .post {
-        margin-right: 20px;
+    .column4 {
+        position: relative;
+        right: 165px;
+        order: -1;
+        width: 0;
+    }
+    /* .column2 {
+        order: 5;
+        width: 0;
+    }
+    .column2 .post {
+        display: flex;
+        flex-direction: row;
+        width: 950px;
+        margin: 30px auto;
+        justify-content: space-evenly;
+    } */
+    .post:nth-child(1) {
+        margin-left: 0px;
+        margin-right: 10px;
     }
     .post p {
         margin: 20px 0 20px 0;
