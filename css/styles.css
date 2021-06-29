@@ -147,7 +147,7 @@ body {
 .nav__text {
     align-self: center;
     font-family: 'Fjalla One', sans-serif;
-    font-size: 2em;
+    font-size: 44px;
     color: white;
     justify-self: center;
     text-decoration: none;
@@ -220,7 +220,15 @@ body {
     max-height: 508px;
 }
 
-.banner::before {}
+.banner__img::before {
+    position: relative;
+    background: url(/img/angle-right-solid.svg) left top no-repeat;
+}
+
+.banner__img::after {
+    position: relative;
+    background: url(/img/angle-right-solid.svg) left top no-repeat;
+}
 
 
 /* code below disables default x button inside of the input*/
@@ -238,9 +246,7 @@ input::-webkit-search-results-decoration {
     border-radius: 5px 5px 0 0;
     margin-top: 60px;
     border-bottom: none;
-    object-fit: cover;
-    object-position: 50% 50%;
-    object-fit: scale-down;
+    object-fit: contain;
 }
 
 .banner__wrapper {
