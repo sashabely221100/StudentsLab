@@ -1,103 +1,11 @@
 @charset "UTF-8";
-
-/*! НАЧАЛО ОБНУЛЕНИЯ !*/
-
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
-* {
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-
-*,
-*:before,
-*:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
- :focus,
- :active {
-    outline: none;
-}
-
-a:focus,
-a:active {
-    outline: none;
-}
-
-nav,
-footer,
-header,
-aside {
-    display: block;
-}
-
-html,
-body {
-    height: 100%;
-    width: 100%;
-    font-size: 100%;
-    line-height: 1;
-    font-size: 14px;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    overflow-x: hidden;
-}
-
-input,
-button,
-textarea {
-    font-family: inherit;
-}
-
-input::-ms-clear {
-    display: none;
-}
-
-button {
-    cursor: pointer;
-}
-
-button::-moz-focus-inner {
-    padding: 0;
-    border: 0;
-}
-
-a,
-a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-ul li {
-    list-style: none;
-}
-
-img {
-    vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-size: inherit;
-    font-weight: inherit;
-}
-
-
-/*! КОНЕЦ ОБНУЛЕНИЯ !*/
-
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@300;400;700&family=Oxygen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+/*! RESET STYLES !*/
+
+@import url(/css/reset.css);
  :root {
     --main-color: #b297c4;
 }
@@ -222,12 +130,12 @@ body {
 
 .banner__img::before {
     position: relative;
-    background: url(/img/angle-right-solid.svg) left top no-repeat;
+    background: url(/img/angle-right-solid.svg) left center no-repeat;
 }
 
 .banner__img::after {
     position: relative;
-    background: url(/img/angle-right-solid.svg) left top no-repeat;
+    background: url(/img/angle-right-solid.svg) right center no-repeat;
 }
 
 
@@ -247,6 +155,7 @@ input::-webkit-search-results-decoration {
     margin-top: 60px;
     border-bottom: none;
     object-fit: contain;
+    align-items: center;
 }
 
 .banner__wrapper {
@@ -339,7 +248,7 @@ input::-webkit-search-results-decoration {
     align-items: center;
 }
 
-.main__panel {
+.header__panel {
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
@@ -463,7 +372,7 @@ input::-webkit-search-results-decoration {
     width: 270px;
 }
 
-.form__wrapper {
+.search-form__wrapper {
     height: 100%;
     padding-top: 24px;
     width: 230px;
@@ -689,7 +598,6 @@ aside>div:not(:last-child) {
 
 .footer {
     margin-top: auto;
-    margin: 0 auto;
 }
 
 .footer__wrapper {
@@ -886,7 +794,7 @@ aside>div:not(:last-child) {
     .aside__list-item {
         font-size: 11px;
     }
-    .form__wrapper {
+    .search-form__wrapper {
         height: auto;
         width: 230px;
         margin: 0 auto;
@@ -907,7 +815,7 @@ aside>div:not(:last-child) {
         height: 60%;
         width: 230px;
         margin: 0 auto;
-        overflow: hidden;
+        overflow-y: hidden;
     }
     .aside__icon-menu {}
     /* .aside__icon-menu h4 {
@@ -948,17 +856,25 @@ aside>div:not(:last-child) {
 @media screen and (max-width:878px) {
     /*2 колонки*/
     /*футер ломается*/
+    .content__wrapper {
+        padding-top: 0px;
+    }
     .aside {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 950px;
         margin: 30px auto;
+        align-items: center;
+        margin-bottom: 300px;
         /* justify-content: space-evenly; */
     }
     .content__wrapper {
         justify-content: center;
         padding: 30px;
         gap: 30px;
+    }
+    .column:not(:last-of-type) {
+        margin-top: 800px;
     }
     .column1 {
         order: 1;
@@ -1007,7 +923,7 @@ aside>div:not(:last-child) {
     .aside__list-item {
         font-size: 11px;
     }
-    .form__wrapper {
+    .search-form__wrapper {
         height: auto;
         width: 230px;
         margin: 0 auto;
