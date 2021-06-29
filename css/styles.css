@@ -198,6 +198,10 @@ body {
     border: none;
 }
 
+.nav__item a:hover {
+    color: var(--main-color);
+}
+
 .nav__item:last-child:hover {
     border-left: 1px solid rgb(43, 42, 42);
     border-right: 1px solid rgb(43, 42, 42);
