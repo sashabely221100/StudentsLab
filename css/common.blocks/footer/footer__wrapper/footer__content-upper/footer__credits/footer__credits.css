@@ -1,0 +1,7 @@
+.footer__credits {
+    width: 100%;
+}
+
+.footer__credits:not(:first-of-type) {
+    margin-left: 42px;
+}

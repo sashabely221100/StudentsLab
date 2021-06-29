@@ -6,6 +6,21 @@
 /*! RESET STYLES !*/
 
 @import url(/css/reset.css);
+@import url(/css/common.blocks/footer/footer__wrapper/footer__content-lower/footer__content-lower.css);
+@import url(/css/common.blocks/footer/footer__wrapper/footer__content-upper/footer__content-upper.css);
+@import url(/css/common.blocks/footer/footer__wrapper/footer__content-upper/footer__credits/footer__credits.css);
+@import url(/css/common.blocks/header/header__banner/header__banner.css);
+@import url(/css/common.blocks/header/header__banner/banner/banner.css);
+@import url(/css/common.blocks/header/header__banner/banner/banner__img/banner__img.css);
+@import url(/css/common.blocks/header/header__banner/banner/banner__wrapper/banner__wrapper.css);
+@import url(/css/common.blocks/header/header__banner/banner/banner__button/banner__button.css);
+@import url(/css/common.blocks/header/header__banner/banner/banner__text/banner__text.css);
+@import url(/css/common.blocks/header/header__panel.css);
+@import url(/css/common.blocks/header/nav/nav__item/nav__item.css);
+@import url(/css/common.blocks/header/nav/nav__list/nav__list.css);
+@import url(/css/common.blocks/header/nav/nav__logo/nav__logo.css);
+@import url(/css/common.blocks/header/nav/nav__text/nav__text.css);
+@import url(/css/common.blocks/header/nav/nav__wrapper.css);
  :root {
     --main-color: #b297c4;
 }
@@ -66,6 +81,8 @@ body {
     display: flex;
 }
 
+
+/* 
 .nav__item:not(:last-child) {
     padding: 0px 20px;
     border-left: 1px solid rgb(43, 42, 42);
@@ -118,7 +135,7 @@ body {
     margin-left: 1px;
     margin-right: 1px;
     border: none;
-}
+} */
 
 .banner {
     display: flex;
@@ -605,29 +622,33 @@ aside>div:not(:last-child) {
     margin: 0 auto;
 }
 
-.footer__content-upper {
+
+/* .footer__content-upper {
     display: flex;
     margin-top: 49px;
     padding-bottom: 31px;
     border-bottom: 1px solid lightgrey;
     align-items: center;
-}
+} */
 
-.footer__content-lower {
+
+/* .footer__content-lower {
     padding-left: 5px;
     margin-top: 45px;
     display: flex;
     padding-bottom: 71px;
     align-items: center;
-}
+} */
 
+
+/* 
 .footer__credits {
     width: 100%;
 }
 
 .footer__credits:not(:first-of-type) {
     margin-left: 42px;
-}
+} */
 
 .footer__credits h5 {
     /* Text style for "Copyright" */
