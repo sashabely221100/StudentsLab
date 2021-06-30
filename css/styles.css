@@ -5,22 +5,22 @@
 
 /*! RESET STYLES !*/
 
-@import url(/css/reset.css);
-@import url(/css/common.blocks/footer/footer__wrapper/footer__content-lower/footer__content-lower.css);
-@import url(/css/common.blocks/footer/footer__wrapper/footer__content-upper/footer__content-upper.css);
-@import url(/css/common.blocks/footer/footer__wrapper/footer__content-upper/footer__credits/footer__credits.css);
-@import url(/css/common.blocks/header/header__banner/header__banner.css);
-@import url(/css/common.blocks/header/header__banner/banner/banner.css);
-@import url(/css/common.blocks/header/header__banner/banner/banner__img/banner__img.css);
-@import url(/css/common.blocks/header/header__banner/banner/banner__wrapper/banner__wrapper.css);
-@import url(/css/common.blocks/header/header__banner/banner/banner__button/banner__button.css);
-@import url(/css/common.blocks/header/header__banner/banner/banner__text/banner__text.css);
-@import url(/css/common.blocks/header/header__panel.css);
-@import url(/css/common.blocks/header/nav/nav__item/nav__item.css);
-@import url(/css/common.blocks/header/nav/nav__list/nav__list.css);
-@import url(/css/common.blocks/header/nav/nav__logo/nav__logo.css);
-@import url(/css/common.blocks/header/nav/nav__text/nav__text.css);
-@import url(/css/common.blocks/header/nav/nav__wrapper.css);
+@import url(../css/reset.css);
+@import url(../css/common.blocks/footer/footer__wrapper/footer__content-lower/footer__content-lower.css);
+@import url(../css/common.blocks/footer/footer__wrapper/footer__content-upper/footer__content-upper.css);
+@import url(../css/common.blocks/footer/footer__wrapper/footer__content-upper/footer__credits/footer__credits.css);
+@import url(../css/common.blocks/header/header__banner/header__banner.css);
+@import url(../css/common.blocks/header/header__banner/banner/banner.css);
+@import url(../css/common.blocks/header/header__banner/banner/banner__img/banner__img.css);
+@import url(../css/common.blocks/header/header__banner/banner/banner__wrapper/banner__wrapper.css);
+@import url(../css/common.blocks/header/header__banner/banner/banner__button/banner__button.css);
+@import url(../css/common.blocks/header/header__banner/banner/banner__text/banner__text.css);
+@import url(../css/common.blocks/header/header__panel.css);
+@import url(../css/common.blocks/header/nav/nav__item/nav__item.css);
+@import url(../css/common.blocks/header/nav/nav__list/nav__list.css);
+@import url(../css/common.blocks/header/nav/nav__logo/nav__logo.css);
+@import url(../css/common.blocks/header/nav/nav__text/nav__text.css);
+@import url(../css/common.blocks/header/nav/nav__wrapper.css);
  :root {
     --main-color: #b297c4;
 }
@@ -33,7 +33,7 @@
 }
 
 body {
-    background: url(/img/bg.png) center;
+    background: url(../img/bg.png) center;
 }
 
 .header {}
@@ -147,12 +147,12 @@ body {
 
 .banner__img::before {
     position: relative;
-    background: url(/img/angle-right-solid.svg) left center no-repeat;
+    background: url(../img/angle-right-solid.svg) left center no-repeat;
 }
 
 .banner__img::after {
     position: relative;
-    background: url(/img/angle-right-solid.svg) right center no-repeat;
+    background: url(../img/angle-right-solid.svg) right center no-repeat;
 }
 
 
@@ -557,7 +557,7 @@ aside>div:not(:last-child) {
     pointer-events: none;
     /*!blocks following a link*/
     padding-left: 16px;
-    background: url(/img/angle-right-solid.svg) left top no-repeat;
+    background: url(../img/angle-right-solid.svg) left top no-repeat;
 }
 
 .posts__wrapper {
