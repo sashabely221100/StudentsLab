@@ -41,7 +41,6 @@ body {
 .nav {
     margin-top: 70px;
     width: 100%;
-    max-height: 50px;
     background-color: #383838;
     justify-content: space-between;
 }
@@ -138,14 +137,28 @@ body {
 } */
 
 .banner {
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    max-width: 1170px;
-    margin: 0 auto;
+    margin-top: 60px;
     max-height: 508px;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    height: 448px;
+    border: 20px solid white;
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
+    object-fit: cover;
+    background-position: center;
+    object-fit: scale-down;
 }
 
-.banner__img::before {
+
+/* мб стрелки просто к другому классу прикручу... */
+
+
+/* .banner__img::before {
     position: relative;
     background: url(../img/angle-right-solid.svg) left center no-repeat;
 }
@@ -153,7 +166,7 @@ body {
 .banner__img::after {
     position: relative;
     background: url(../img/angle-right-solid.svg) right center no-repeat;
-}
+} */
 
 
 /* code below disables default x button inside of the input*/
@@ -175,7 +188,8 @@ input::-webkit-search-results-decoration {
     align-items: center;
 }
 
-.banner__wrapper {
+
+/* .banner__wrapper {
     display: flex;
     flex-shrink: 1;
     width: 100%;
@@ -184,7 +198,7 @@ input::-webkit-search-results-decoration {
     row-gap: 21px;
     position: relative;
     bottom: 355px;
-}
+} */
 
 .banner__text {
     display: flex;
@@ -774,6 +788,12 @@ aside>div:not(:last-child) {
 } */
 
 @media (max-width: 1170px) {
+    .banner__text {
+        font-size: 48px;
+    }
+    .banner {
+        border: 15px solid white;
+    }
     .column4 {
         order: -1;
         width: 0;
@@ -875,6 +895,12 @@ aside>div:not(:last-child) {
 }
 
 @media screen and (max-width:878px) {
+    .banner__text {
+        font-size: 34px;
+    }
+    .banner {
+        border: 10px solid white;
+    }
     /*2 колонки*/
     /*футер ломается*/
     .content__wrapper {
