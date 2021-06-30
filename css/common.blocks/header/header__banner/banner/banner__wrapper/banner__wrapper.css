@@ -1,12 +1,4 @@
 .banner__wrapper {
-    /* display: flex;
-    flex-shrink: 1;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 21px;
-    position: relative;
-    bottom: 355px; */
     height: 70%;
     margin: 0 auto;
     display: flex;

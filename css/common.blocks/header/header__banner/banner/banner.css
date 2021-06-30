@@ -6,3 +6,22 @@
     margin: 0 auto;
     max-height: 508px;
 }
+
+.banner::before {
+    position: relative;
+    background: url(../../../../../../img/angle-left-solid.svg) left center no-repeat;
+    content: "";
+    width: 30px;
+    height: 30px;
+}
+
+.banner::after {
+    position: relative;
+    background: url(../../../../../../img/angle-right-solid.svg) right center no-repeat;
+    content: "";
+    width: 30px;
+    height: 30px;
+}
+
+
+/* url(../../../../../../img/angle-right-solid.svg) left center no-repeat */

@@ -787,6 +787,19 @@ aside>div:not(:last-child) {
     }
 } */
 
+
+/*! changes color of the selected text  */
+
+::selection {
+    background: var(--main-color);
+    /* Safari */
+}
+
+ ::-moz-selection {
+    background: var(--main-color);
+    /* Firefox */
+}
+
 @media (max-width: 1170px) {
     .banner__text {
         font-size: 48px;
