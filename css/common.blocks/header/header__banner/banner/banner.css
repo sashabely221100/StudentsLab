@@ -9,18 +9,23 @@
 
 .banner::before {
     position: relative;
-    background: url(../../../../../../img/angle-left-solid.svg) left center no-repeat;
-    content: "";
-    width: 30px;
-    height: 30px;
+    top: 171px;
+    right: 1px;
+    content: url(../../../../../../img/arrow-left.png);
+    max-width: 32px;
+    max-height: 47px;
+    align-self: flex-start;
 }
 
 .banner::after {
     position: relative;
-    background: url(../../../../../../img/angle-right-solid.svg) right center no-repeat;
-    content: "";
-    width: 30px;
-    height: 30px;
+    bottom: 171px;
+    left: 1px;
+    /* background: url(../../../../../../img/angle-right-solid.svg) right center no-repeat; */
+    content: url(../../../../../../img/arrow-right.png);
+    max-width: 32px;
+    height: 47px;
+    align-self: flex-end;
 }
 
 
