@@ -277,7 +277,7 @@ input::-webkit-search-results-decoration {
     margin: 0 auto;
 }
 
-.post h3 {
+.post__heading {
     text-transform: uppercase;
     font-family: 'Fjalla One', sans-serif;
     font-size: 17px;
@@ -294,7 +294,7 @@ input::-webkit-search-results-decoration {
     line-height: normal;
 }
 
-.post p {
+.post__text {
     /* Style for "Sed adipis" */
     color: #979797;
     font-family: Oxygen;
@@ -314,8 +314,10 @@ input::-webkit-search-results-decoration {
 
 /* overriding paragraph's margins according to the task*/
 
-.post img {
+.post__image {
     padding: 0;
+    padding-right: 17px;
+    height: 100%;
 }
 
 .post button {
@@ -490,20 +492,16 @@ button i {
 
 .aside__post {
     display: flex;
+    align-items: center;
 }
 
 .aside__post:not(:last-of-type) {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     border-bottom: 1px solid lightgrey;
-    margin-bottom: 20px;
 }
 
 .aside__post:last-of-type {
-    padding-bottom: 30px;
-}
-
-.post__image {
-    padding-right: 17px;
+    padding-bottom: 20px;
 }
 
 .post__text h5 {
@@ -607,9 +605,7 @@ button i {
     line-height: normal;
     color: #8f8f8f;
     padding-top: 5px;
-    pointer-events: none;
     cursor: pointer;
-    /*!blocks following a link*/
 }
 
 .footer__links {
@@ -636,8 +632,7 @@ button i {
     gap: 18px;
 }
 
-.footer__link-item {
-    text-decoration: none;
+.footer__link-item>:any-link {
     color: var(--main-color);
     font-family: "Open Sans";
     font-size: 13px;
@@ -649,6 +644,7 @@ button i {
     font-style: normal;
     letter-spacing: 0.26px;
     line-height: normal;
+    text-decoration: none;
 }
 
 .footer__link-item:not(:nth-child(3))::after {
@@ -656,6 +652,10 @@ button i {
     color: var(--main-color);
     position: relative;
     left: 10px;
+}
+
+.footer__icon:hover {
+    color: white;
 }
 
 
@@ -780,7 +780,7 @@ button i {
     }
     .content__wrapper {
         grid-template-columns: repeat(2, 1fr);
-        margin-top: 170px;
+        margin-top: 230px;
     }
     .post:nth-child(1) {
         margin-left: 0px;
