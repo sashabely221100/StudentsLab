@@ -1,0 +1,7 @@
+.footer__content-upper {
+    display: flex;
+    margin-top: 49px;
+    padding-bottom: 31px;
+    border-bottom: 1px solid lightgrey;
+    justify-content: space-between;
+}

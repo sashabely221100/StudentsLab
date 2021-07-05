@@ -1,0 +1,12 @@
+.banner__button {
+    font-family 'Fjalla One', sans-serif;
+    font-size 18px;
+    color white;
+    border-radius 5px;
+    background-color Transparent;
+    cursor pointer;
+    border 3px solid rgb(255, 255, 255);
+    opacity 0.6;
+    width 120px;
+    height 40px;
+}
