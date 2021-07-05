@@ -1,5 +1,5 @@
 .footer__credits {
-    width: 100%;
+    /* width: 100%; */
 }
 
 .footer__credits:not(:first-of-type) {
