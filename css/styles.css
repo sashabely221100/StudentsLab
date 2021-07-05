@@ -179,20 +179,20 @@ input::-webkit-search-results-decoration {
 }
 
 .panel {
-    margin: 0 auto;
-    display: flex;
-    margin-bottom: 55px;
-    position: relative;
-    bottom: 1px;
+    max-height: 550px;
+    box-shadow: 0 1px 4px rgb(82 84 77 / 16%);
+    border-radius: 0 0 5px 5px;
+    background-color: #ffffff;
 }
 
 .header__panel {
     max-width: 1170px;
     justify-content: space-evenly;
-    max-height: 550px;
-    box-shadow: 0 1px 4px rgb(82 84 77 / 16%);
-    border-radius: 0 0 5px 5px;
-    background-color: #ffffff;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 55px;
+    position: relative;
+    bottom: 1px;
 }
 
 .panel__wrapper {
@@ -262,14 +262,14 @@ input::-webkit-search-results-decoration {
 .picture-box__row1 {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    padding-bottom: 20px;
+    gap: 15px;
+    padding-bottom: 15px;
 }
 
 .picture-box__row2 {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 15px;
 }
 
 .post__wrapper {
@@ -282,7 +282,6 @@ input::-webkit-search-results-decoration {
     font-family: 'Fjalla One', sans-serif;
     font-size: 17px;
     color: #747474;
-    margin: 29px 0px;
     font-size: 17px;
     font-weight: 400;
     font-style: normal;
@@ -300,9 +299,6 @@ input::-webkit-search-results-decoration {
     font-family: Oxygen;
     font-size: 13px;
     font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 22px;
     text-align: left;
     /* Text style for "S, ed adip" */
     font-style: normal;
@@ -316,8 +312,6 @@ input::-webkit-search-results-decoration {
 
 .post__image {
     padding: 0;
-    padding-right: 17px;
-    height: 100%;
 }
 
 .post button {
@@ -493,6 +487,7 @@ button i {
 .aside__post {
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 
 .aside__post:not(:last-of-type) {
@@ -702,6 +697,12 @@ button i {
     .aside__post:not(:last-of-type) {
         border-bottom: none;
     }
+    .post__text {
+        margin: 0px;
+    }
+    .post__heading {
+        text-align: center;
+    }
     .post p {
         margin: 20px 0;
     }
@@ -710,6 +711,7 @@ button i {
     }
     .posts__wrapper {
         flex-direction: row;
+        align-items: baseline;
     }
     .post__wrapper {
         margin: 0 auto;
@@ -752,9 +754,6 @@ button i {
     }
     .aside__list {
         margin-bottom: 0;
-    }
-    .post__image {
-        margin-bottom: 10px;
     }
     .footer__wrapper {
         padding: 25px;
@@ -842,9 +841,9 @@ button i {
     .aside__list {
         margin-bottom: 0;
     }
-    .post__image {
+    /* .post__image {
         margin-bottom: 10px;
-    }
+    } */
     .footer__wrapper {
         padding: 25px;
     }
