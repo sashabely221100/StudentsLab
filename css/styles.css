@@ -25,7 +25,7 @@
     --main-color: #b297c4;
 }
 
-body {
+.body {
     background: url(../img/bg.png) center;
 }
 
@@ -320,6 +320,7 @@ input::-webkit-search-results-decoration {
     letter-spacing: 0.52px;
     line-height: normal;
     margin-bottom: 30px;
+    text-decoration: underline;
 }
 
 .post__text {
@@ -546,7 +547,7 @@ input::-webkit-search-results-decoration {
     cursor: default;
 }
 
-.post__text p {
+.aside-post__text {
     /* Style for "Nulla nec" */
     color: #979797;
     font-family: 'Oxygen', sans-serif;
@@ -556,7 +557,6 @@ input::-webkit-search-results-decoration {
     letter-spacing: normal;
     line-height: 22px;
     text-align: left;
-    text-decoration: underline;
     /* Text style for "N, ulla ne" */
     font-style: normal;
     letter-spacing: 0.52px;
@@ -584,7 +584,7 @@ input::-webkit-search-results-decoration {
     /* Text style for "2013" */
 }
 
-.footer__links i {
+.footer__icon {
     transform: scale(1.7);
     color: var(--main-color);
 }
@@ -765,7 +765,7 @@ input::-webkit-search-results-decoration {
     .post__wrapper {
         margin: 0 auto;
     }
-    .post__text p {
+    .aside-post__text {
         font-size: 11px;
     }
     .aside__list-item {
