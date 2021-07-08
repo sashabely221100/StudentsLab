@@ -9,7 +9,6 @@
 }
 
 .nav__item:last-child {
-    height: 50px;
     padding: 0px 20px;
     border-left: 1px solid rgb(43, 42, 42);
     border-right: 1px solid rgb(43, 42, 42);
@@ -23,7 +22,7 @@
     text-decoration: none;
 }
 
-.nav__item a {
+.nav__item-link {
     display: flex;
     align-self: center;
     height: 100%;
