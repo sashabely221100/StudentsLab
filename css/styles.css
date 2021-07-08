@@ -5,22 +5,22 @@
 
 /*! RESET STYLES !*/
 
-@import url(../css/reset.css);
-@import url(../css/common.blocks/footer/footer__wrapper/footer__content-lower/footer__content-lower.css);
-@import url(../css/common.blocks/footer/footer__wrapper/footer__content-upper/footer__content-upper.css);
-@import url(../css/common.blocks/footer/footer__wrapper/footer__content-upper/footer__credits/footer__credits.css);
-@import url(../css/common.blocks/header/header__banner/header__banner.css);
-@import url(../css/common.blocks/header/header__banner/banner/banner.css);
-@import url(../css/common.blocks/header/header__banner/banner/banner__img/banner__img.css);
-@import url(../css/common.blocks/header/header__banner/banner/banner__wrapper/banner__wrapper.css);
-@import url(../css/common.blocks/header/header__banner/banner/banner__button/banner__button.css);
-@import url(../css/common.blocks/header/header__banner/banner/banner__text/banner__text.css);
-@import url(../css/common.blocks/header/header__panel.css);
-@import url(../css/common.blocks/header/nav/nav__item/nav__item.css);
-@import url(../css/common.blocks/header/nav/nav__list/nav__list.css);
-@import url(../css/common.blocks/header/nav/nav__logo/nav__logo.css);
-@import url(../css/common.blocks/header/nav/nav__text/nav__text.css);
-@import url(../css/common.blocks/header/nav/nav__wrapper.css);
+@import url(./reset.css);
+@import url(./common.blocks/footer/footer__wrapper/footer__content-lower/footer__content-lower.css);
+@import url(./common.blocks/footer/footer__wrapper/footer__content-upper/footer__content-upper.css);
+@import url(./common.blocks/footer/footer__wrapper/footer__content-upper/footer__credits/footer__credits.css);
+@import url(./common.blocks/header/header__banner/header__banner.css);
+@import url(./common.blocks/header/header__banner/banner/banner.css);
+@import url(./common.blocks/header/header__banner/banner/banner__img/banner__img.css);
+@import url(./common.blocks/header/header__banner/banner/banner__wrapper/banner__wrapper.css);
+@import url(./common.blocks/header/header__banner/banner/banner__button/banner__button.css);
+@import url(./common.blocks/header/header__banner/banner/banner__text/banner__text.css);
+@import url(./common.blocks/header/header__panel.css);
+@import url(./common.blocks/header/nav/nav__item/nav__item.css);
+@import url(./common.blocks/header/nav/nav__list/nav__list.css);
+@import url(./common.blocks/header/nav/nav__logo/nav__logo.css);
+@import url(./common.blocks/header/nav/nav__text/nav__text.css);
+@import url(./common.blocks/header/nav/nav__wrapper.css);
  :root {
     --main-color: #b297c4;
 }
@@ -219,7 +219,6 @@ input::-webkit-search-results-decoration {
     grid-template-columns: repeat(auto-fill, 270px);
     grid-column: 1/4;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .post {
@@ -231,6 +230,7 @@ input::-webkit-search-results-decoration {
     display: flex;
     flex-direction: column;
     margin-bottom: 28px;
+    padding: 14px 20px 0px;
 }
 
 .post2 {
@@ -266,11 +266,12 @@ input::-webkit-search-results-decoration {
     justify-content: space-between;
 }
 
-.post__wrapper {
+
+/* .post__wrapper {
     max-width: 230px;
     margin: 0 auto;
     padding-top: 14px;
-}
+} */
 
 .post__heading,
 .aside-post__heading {
@@ -355,6 +356,8 @@ input::-webkit-search-results-decoration {
     color: white;
     text-align: left;
     padding-left: 20px;
+    position: relative;
+    right: 20px;
 }
 
 .search-form {
@@ -529,25 +532,7 @@ input::-webkit-search-results-decoration {
     padding-bottom: 20px;
 }
 
-.post__text h5 {
-    /* Style for "Vivamus" */
-    color: var(--main-color);
-    font-family: "Fjalla One";
-    font-size: 13px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 22px;
-    text-align: left;
-    text-transform: uppercase;
-    /* Text style for "V, ivamus" */
-    font-style: normal;
-    letter-spacing: 0.26px;
-    line-height: normal;
-    cursor: default;
-}
-
-.aside-post__text {
+*/ .aside-post__text {
     /* Style for "Nulla nec" */
     color: #979797;
     font-family: 'Oxygen', sans-serif;
@@ -704,8 +689,8 @@ input::-webkit-search-results-decoration {
         border-bottom: none;
     }
     .content__wrapper {
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
+        column-gap: 10px;
+        justify-content: space-around;
     }
     .main__content {
         grid-template: repeat(4, 20%)/repeat(3, 1fr);
@@ -716,7 +701,8 @@ input::-webkit-search-results-decoration {
         order: -1;
         display: grid;
         column-gap: 15px;
-        place-items: center;
+        align-items: flex-start;
+        justify-items: center;
         height: fit-content;
         grid-column-start: 1;
         grid-column-end: 4;
@@ -761,9 +747,6 @@ input::-webkit-search-results-decoration {
     .posts__wrapper {
         flex-direction: row;
         align-items: baseline;
-    }
-    .post__wrapper {
-        margin: 0 auto;
     }
     .aside-post__text {
         font-size: 11px;
@@ -828,9 +811,13 @@ input::-webkit-search-results-decoration {
     .banner {
         border: 10px solid white;
     }
+    .main__content {
+        padding-bottom: 60px;
+    }
     .content__wrapper {
         grid-template-columns: repeat(2, 1fr);
-        margin-top: 230px;
+        margin-top: 200px;
+        place-items: center;
     }
     .post:nth-child(1) {
         margin-left: 0px;
@@ -847,9 +834,6 @@ input::-webkit-search-results-decoration {
         flex-direction: row;
         align-items: baseline;
         column-gap: 15px;
-    }
-    .post__wrapper {
-        margin: 0 auto;
     }
     .aside-post__text-small {
         margin: 20px 0px 0px 0;
@@ -945,13 +929,23 @@ input::-webkit-search-results-decoration {
         gap: 30px;
     }
     .content__wrapper {
+        margin-top: 0;
         display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        margin: 0 auto;
+        /* grid-template-columns: max-content; */
+        flex-wrap: wrap;
     }
     .nav__text {
         font-size: 34px;
         padding: 0px 10px;
     }
 }
+
+
+/* @media (max-width:560px) {
+    .content__wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 0 auto;
+    }
+} */
