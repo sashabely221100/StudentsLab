@@ -210,19 +210,20 @@ input::-webkit-search-results-decoration {
     margin: 0 auto;
     display: grid;
     column-gap: 30px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 270px;
 }
 
 .content__wrapper {
-    display: grid;
+    display: flex;
     /*! 4 columns */
-    grid-template-columns: repeat(auto-fill, 270px);
-    grid-column: 1/4;
+    /* grid-template-columns: repeat(auto-fill, 270px);
+    grid-column: 1/4; */
+    width: 100%;
+    margin: 0 auto;
     justify-content: space-between;
 }
 
 .post {
-    height: auto;
     background-color: white;
     width: 270px;
     height: fit-content;
@@ -265,13 +266,6 @@ input::-webkit-search-results-decoration {
     flex-direction: row;
     justify-content: space-between;
 }
-
-
-/* .post__wrapper {
-    max-width: 230px;
-    margin: 0 auto;
-    padding-top: 14px;
-} */
 
 .post__heading,
 .aside-post__heading {
@@ -437,15 +431,6 @@ input::-webkit-search-results-decoration {
     align-items: center;
 }
 
-.menu__wrapper {
-    width: 230px;
-    margin: 0 auto;
-    padding-top: 35px;
-    overflow: hidden;
-    height: 290px;
-    margin-bottom: 29px;
-}
-
 .aside__icon-menu {
     margin-top: 30px;
     width: 270px;
@@ -532,23 +517,6 @@ input::-webkit-search-results-decoration {
     padding-bottom: 20px;
 }
 
-*/ .aside-post__text {
-    /* Style for "Nulla nec" */
-    color: #979797;
-    font-family: 'Oxygen', sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 22px;
-    text-align: left;
-    /* Text style for "N, ulla ne" */
-    font-style: normal;
-    letter-spacing: 0.52px;
-    line-height: normal;
-    cursor: default;
-}
-
 .footer {
     margin-top: auto;
 }
@@ -624,13 +592,6 @@ input::-webkit-search-results-decoration {
     width: 300px;
 }
 
-.footer__upper-row {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 30px;
-    border-bottom: 1px solid rgba(88, 86, 86, 0.9);
-}
-
 .footer__page-links {
     display: flex;
     gap: 22px
@@ -692,9 +653,14 @@ input::-webkit-search-results-decoration {
         column-gap: 10px;
         justify-content: space-around;
     }
+    .column {
+        display: flex;
+        flex-direction: column;
+        max-width: 270px;
+    }
     .main__content {
-        grid-template: repeat(4, 20%)/repeat(3, 1fr);
-        padding-bottom: 100px;
+        grid-template: repeat(2, auto)/1fr;
+        row-gap: 30px;
     }
     .aside {
         width: 100%;
@@ -704,8 +670,6 @@ input::-webkit-search-results-decoration {
         align-items: flex-start;
         justify-items: center;
         height: fit-content;
-        grid-column-start: 1;
-        grid-column-end: 4;
         grid-template-columns: 1fr 1fr 1fr;
     }
     .aside__icon-menu {
@@ -760,12 +724,6 @@ input::-webkit-search-results-decoration {
         justify-content: center;
         padding: 0;
     }
-    .aside__ {
-        height: auto;
-        width: 230px;
-        margin: 0 auto;
-        overflow: hidden;
-    }
     .aside__wrapper {
         height: 60%;
         width: 230px;
@@ -815,9 +773,7 @@ input::-webkit-search-results-decoration {
         padding-bottom: 60px;
     }
     .content__wrapper {
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 200px;
-        place-items: center;
+        flex-wrap: wrap;
     }
     .post:nth-child(1) {
         margin-left: 0px;
